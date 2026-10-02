@@ -1,0 +1,25 @@
+{
+  "name": "protein-local-align",
+  "version": "1.0.0",
+  "private": true,
+  "description": "蛋白质双序列 Smith-Waterman 局部比对与 Gotoh 仿射缺口核验后端（API + CLI）",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --no-warnings dist/src/server.js",
+    "dev": "tsx src/server.ts",
+    "cli": "tsx src/cli.ts",
+    "test": "node --import tsx --no-warnings --test test/*.test.ts",
+    "demo": "tsx scripts/demo.ts"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
