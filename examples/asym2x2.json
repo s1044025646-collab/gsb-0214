@@ -1,0 +1,8 @@
+{
+  "name": "asym-demo",
+  "alphabet": ["A", "R"],
+  "matrix": [
+    [2, 5],
+    [-5, 2]
+  ]
+}
